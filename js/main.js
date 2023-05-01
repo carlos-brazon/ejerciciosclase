@@ -32,7 +32,7 @@
 //  let city="madrid";
 //  city="Anaco";
 //  console.log(city);
- 
+
 //  console.log("Nonbre:"+ name+","+ "Edad:" + age+ "Lugar de nacimiento:"+ city);
 
 
@@ -377,7 +377,7 @@
 //     case 
 //     number3>min && number3<max:
 //     console.log("El número "+ number3+" se encuentra dentro del rango");
-        
+
 //         break;
 
 //     default:
@@ -406,39 +406,39 @@
 //     operation==="divide":
 //     console.log(number1/number2); 
 //     break;
-    
+
 //     default:
 //         console.log("Invalid operation")
 //         break;
 //     }
 //     console.log("");
-    
+
 //     console.log("Ejercicio 8 switch");//************************************************************************************************ */
 //     let year=2024
-    
+
 //     switch (true) {
 //         case
 //         year%4===0:
 //         //alert("Si es un año bisiesto");
 //         console.log("SI es un año bisiesto");
 //         break;
-        
+
 //         default:
 //             console.log("NO es un año bisiesto");
 //             //alert("No es un año bisiesto");
 //             break;
 //         }
 //         console.log("");
-        
+
 //         console.log("Ejercicio 8 con ternario ");/************************************************************************************** */
 //         year%4===0 ? console.log("Con ternario: SI es un año bisiesto") //alert("Con ternario: SI es un año bisiesto")
 //         : console.log("Con ternario: NO es un año bisiesto"); //alert("Con ternario: NO es un año bisiesto") 
 //         console.log("");
-        
+
 //         console.log("Ejercicio 9 con switch");/************************************************************************************** */
 //         // const month= prompt("enter month:")
 //         const month= "may"
-        
+
 //         switch (true) {
 //             case 
 //                 month==="january" || month==='march' || month==='may' || month==='july' || month==='august' || month==='october' || month==='december':
@@ -452,15 +452,15 @@
 //                 month==='february':
 //                 alert("El mes tiene 28 días");
 //             break;
-            
+
 //             default:
 //                 alert("Error, introduce un nombre de mes correcto");         
 //                 break;
 //             }
 //             console.log("");
-            
+
 //             console.log("Ejercicio 10 con ternario");/************************************************************************************** */
-            
+
 //             month=== "june" || month==='july' || month==='august' ? alert("La estación del año es : verano") : 
 //             month=== "september" || month==='october' || month==='november' ? alert("La estación del año es : otoño") :
 //             month=== "december" || month==='january' || month==='february' ? alert("La estación del año es : invierno"):
@@ -543,7 +543,7 @@
 
 // // function imcinicial(peso, altura) {
 //     //     let imcoperation=peso/Math.pow(altura,2)
-    
+
 //     //     imcoperation<18.5 ? "Riesgo de malnutrición":
 // //         imcoperation>18.5 && imcoperation<24.9 ? "Peso normal":
 // //         imcoperation>=25.0 && imcoperation<=29.9 ? 'Sobrepeso':
@@ -584,7 +584,7 @@
 //     }else {
 //         return "false"
 //     }
-    
+
 // }
 // const carlosb=tipodato ("Robin Singh")
 // console.log(carlosb);
@@ -610,7 +610,7 @@
 // while (var1 < var2) {
 //     console.log("si");
 //     var1++
-    
+
 // }
 
 
@@ -627,124 +627,123 @@
 
 //*****************   LOOPS***********************************************************************************************************************************************
 console.log("Ejercicio 1.  Itera del 0 al 10 usando un bucle for e imprime cada número por consola. Luego, haz lo mismo con un bucle while");
-for (let i = 0; i <2; i++) {
+for (let i = 0; i < 2; i++) {
     console.log(i);
 }
 
-let i=0
+let i = 0
 
-while (i<2) {
+while (i < 2) {
     console.log(i);
     i++;
 }
 console.log("");
 
 console.log("Ejercicio 2.  Itera del 10 al 0 usando un bucle for e imprime cada número por consola. Luego, haz lo mismo con un bucle while.");
-for (let i = 3; i>=0; i--) {
+for (let i = 3; i >= 0; i--) {
     console.log(i);
 }
 console.log("");
 
-let x=2
+let x = 2
 
-while (x>=0) {
+while (x >= 0) {
     console.log(x);
     x--;
 }
 
 
 console.log("Ejercicio 3.  Crea la variable number y haz que un bucle for imprima la tabla de multiplicar de ese número (del 0 al 10) en la consola, siguiento el siguiente formato:");
-let number=2
+let number = 2
 
-for (let i = 0; i <=10; i++) {
-    console.log(`El número ${number} x ${i} = ${number*i}`);
+for (let i = 0; i <= 10; i++) {
+    console.log(`El número ${number} x ${i} = ${number * i}`);
 }
 
 console.log("Ejercicio 4.  Imprime el siguiente patrón:");
 console.log(`i  i^2  i^3`);
 for (let i = 0; i < 10; i++) {
-    console.log(`${i}   ${Math.pow(i,2)}    ${Math.pow(i,3)}`);
+    console.log(`${i}   ${Math.pow(i, 2)}    ${Math.pow(i, 3)}`);
 }
 console.log("");
 
 console.log("Ejercicio 5.  Imprime por consola, una sola vez, la suma de todos los números del 0 al 10.");
-let number5=1
-for (let y = 0; y <=10; y++) {
-   number5= number5+y
+let number5 = 1
+for (let y = 0; y <= 10; y++) {
+    number5 = number5 + y
 }
 console.log(number5);
-console.log("");  
+console.log("");
 
 console.log("Ejercicio 6.   Haz lo mismo pero con el resultado de multiplicar todos los números del 0 al 10. Una vez estés seguro de que es el resultado correcto, explica en un comentario por qué da ese resultado.");
-let number6=1
-for (let y = 1; y <=10; y++) {
-    number6= number6*y
+let number6 = 1
+for (let y = 1; y <= 10; y++) {
+    number6 = number6 * y
 }
-if (number6===0) {
+if (number6 === 0) {
     console.log(`ingrese un valor diferente, recuerda que todo número multiplicado por 0 es igual a 0 `);
-}else {
+} else {
     console.log(`El resultado es: ${number6}`);
 }
-console.log("");  
+console.log("");
 
 console.log("Ejercicio 7.   Haz lo mismo pero con el resultado de multiplicar todos los números del 0 al 10. Una vez estés seguro de que es el resultado correcto, explica en un comentario por qué da ese resultado.");
-let number7=""
+let number7 = ""
 for (let i = 0; i <= 7; i++) {
-    number7=number7+"#"
+    number7 = number7 + "#"
     console.log(number7);
 }
-console.log("");  
+console.log("");
 
 console.log("Ejercicio 8.   ");
-let number8=02
-for (let i = 0; i <=number8; i++) {
-    if (i%2===0) {
+let number8 = 02
+for (let i = 0; i <= number8; i++) {
+    if (i % 2 === 0) {
         console.log(i);
-    } else{
+    } else {
     }
 }
-console.log("");  
+console.log("");
 
 console.log("Ejercicio 9.   ");
-let number9=5
-let var34=0
-let pares=0
-let impares=0
-for (let i = 0; i <=number9; i++) {
-    let var333= i%2===0
+let number9 = 5
+let var34 = 0
+let pares = 0
+let impares = 0
+for (let i = 0; i <= number9; i++) {
+    let var333 = i % 2 === 0
     if (var333) {
-        pares+=i;
-        
-    }else{
-        impares+=i
+        pares += i;
+
+    } else {
+        impares += i
     }
 }
-console.log(`La suma de todos los números pares del 0 al ${ number9} es ${pares}, y la suma de todos los números impares del 0 al ${number9} es ${impares}.`);
-console.log("");  
+console.log(`La suma de todos los números pares del 0 al ${number9} es ${pares}, y la suma de todos los números impares del 0 al ${number9} es ${impares}.`);
+console.log("");
 
 console.log("Ejercicio 10.   ");
-let number10=28
-for (let i = 0; i <=number10; i+=3) {
-    console.log(i); 
+let number10 = 28
+for (let i = 0; i <= number10; i += 3) {
+    console.log(i);
 }
-console.log("");  
+console.log("");
 
 console.log("Ejercicio 11.   ");
-let str="JavaScript"
-let numm = 3
+let str = "JavaScript"
+let numm = 10
 let letter = "J"
 for (let i = 0; i < numm; i++) {
-    str=str.concat(letter)    
+    str = str.concat(letter)
 }
 console.log(str);
-console.log("");  
+console.log("");
 
 console.log("Ejercicio 12.   ");
 for (let i = 0; i < str.length; i++) {
     console.log(str[i]);
-    console.log("");  
-    
 }
+console.log("");
 
 
 
@@ -768,55 +767,55 @@ for (let i = 0; i < str.length; i++) {
 //*********************************************************EJERCICIOS PUENTE********************************************************
 //*********************************************************EJERCICIOS PUENTE********************************************************
 console.log("Ejercicio 1 PUENTE.   Contamination #1 -String- https://www.codewars.com/kata/596fba44963025c878000039/");
-function contamination(text, char){
+function contamination(text, char) {
     if (text === "" || char === "") {
-     return console.log("empty string");;
+        return console.log("empty string");;
     } else {
-        return console.log(char.repeat(text.length)); 
+        return console.log(char.repeat(text.length));
     }
 }
-contamination("carlos","z")
-console.log("");  
+contamination("carlos", "z")
+console.log("");
 
 console.log("Ejercicio 2 PUENTE.   Exclamation marks series #1: Remove an exclamation mark from the end of string  https://www.codewars.com/kata/57fae964d80daa229d000126");
 function remover(stringg) {
-    
-    if (stringg.charAt(stringg.length-1)==="!") {
-        return console.log(stringg.slice(0, -1)) ;
-    }else {
+
+    if (stringg.charAt(stringg.length - 1) === "!") {
+        return console.log(stringg.slice(0, -1));
+    } else {
         console.log(stringg);
-    }                                                                                                                                                         
+    }
 }
 remover("hola!!")
-console.log("");  
+console.log("");
 
 console.log("Ejercicio 3  PUENTE Convert a string to an array https://www.codewars.com/kata/57e76bc428d6fbc2d500036d");
-function stringToArray(string){
-    if ( typeof string ==="string"){
+function stringToArray(string) {
+    if (typeof string === "string") {
         return string.split(' ')
     }
 }
 
-let resultado= stringToArray("hola como estas");
+let resultado = stringToArray("hola como estas");
 console.log(resultado);
 
-console.log("");  
+console.log("");
 
 console.log("Ejercicio 4  PUENTE Remove String Spaces https://www.codewars.com/kata/57eae20f5500ad98e50002c5");
 
 function oSpace(x) {
-    return x.replaceAll( " ","")
-    
+    return x.replaceAll(" ", "")
+
 }
 console.log(oSpace("hola como estas"));
-console.log("");  
+console.log("");
 
 console.log("Ejercicio 5  PUENTE  Sum The Strings  https://www.codewars.com/kata/5966e33c4e686b508700002d");
-function sumStr(a,b) {
-    return String(Number(a)+Number(b))
+function sumStr(a, b) {
+    return String(Number(a) + Number(b))
 }
 console.log(sumStr('10', '5'));
-console.log("");  
+console.log("");
 
 
 console.log("Ejercicio 6  Stringy Strings  https://www.codewars.com/kata/563b74ddd19a3ad462000054 ");
@@ -835,12 +834,12 @@ stringy(4)
 console.log("");
 
 console.log("Ejercicio 7  Grasshopper - If/else syntax debug   https://www.codewars.com/kata/57089707fe2d01529f00024a");
-function checkAlive (health) {
-    if (health<=0 && health>=-10) {
+function checkAlive(health) {
+    if (health <= 0 && health >= -10) {
         return console.log("false");
-    } else if (health>0 && health<=10) {
+    } else if (health > 0 && health <= 10) {
         return console.log('true');
-    } else{
+    } else {
         console.log("Fuera de rango");
     }
 }
@@ -848,8 +847,8 @@ checkAlive(-11)
 console.log("");
 
 console.log("Ejercicio 8  Online RPG: player to qualifying stage?  https://www.codewars.com/kata/55849d76acd73f6cc4000087 ");
-function playerRankUp (points) {
-    if (points >100){
+function playerRankUp(points) {
+    if (points > 100) {
         return console.log("Well done! You have advanced to the qualifying stage. Win 2 out of your next 3 games to rank up.")
     } else {
         return console.log("False")
@@ -859,63 +858,90 @@ playerRankUp(101)
 console.log("");
 
 console.log("Ejercicio 9  Training JS #6: Basic data types--Boolean and conditional statements if..else https://www.codewars.com/kata/571f832f07363d295d001ba8 ");
-function trueOrFalse(val){
-    if (val<=0 ||  val==undefined){
+function trueOrFalse(val) {
+    if (val <= 0 || val == undefined) {
         return console.log('false');;
-    }                 
-    else {  return console.log('true');;
-}
+    }
+    else {
+        return console.log('true');;
+    }
 
 }
 trueOrFalse(1)
 console.log("");
 
 console.log("Ejercicio 10  Training JS #7: if..else and ternary operator  https://www.codewars.com/kata/57202aefe8d6c514300001fd ");
-function saleHotdogs(n){
-    return n>=0 && n<5 ? console.log(n*100) : n>=5 && n<10 ? console.log(n*95): console.log(n*90);
+function saleHotdogs(n) {
+    return n >= 0 && n < 5 ? console.log(n * 100) : n >= 5 && n < 10 ? console.log(n * 95) : console.log(n * 90);
 }
 saleHotdogs(10)
 console.log("");
 
-console.log("Ejercicio 11  Total amount of points  https://www.codewars.com/kata/5bb904724c47249b10000131 "); 
- function points(games) {
-    let points=0
-   for ( let i = 0 ; i < games.length ; i++ ){
-    let result = games[i].split(":");
-      let x = parseInt(result[0]);
-      let y = parseInt(result[1]);
-     if (x>y ){
-       points+=3
-     } else if (x===y){
-       points+=1
-     }
-   }
-    return points
-  }
- console.log(points(["1:0","0:1","3:0","4:0","2:1","3:1","4:1","3:2","4:2","4:3"]));
- console.log("");
- 
- console.log("Ejercicio 12  Remove the time  https://www.codewars.com/kata/56b0ff16d4aa33e5bb00008e "); 
- function shortenToDate(longDate) {
-     let date = longDate.split(",")
-     return date[0]
+console.log("Ejercicio 11  Total amount of points  https://www.codewars.com/kata/5bb904724c47249b10000131 ");
+function points(games) {
+    let points = 0
+    for (let i = 0; i < games.length; i++) {
+        let result = games[i].split(":");
+        let x = parseInt(result[0]);
+        let y = parseInt(result[1]);
+        if (x > y) {
+            points += 3
+        } else if (x === y) {
+            points += 1
+        }
     }
-    console.log(shortenToDate("Friday May 2, 9am"));
-    console.log("");
-    
-    console.log("Ejercicio 13  Did she say hallo?  https://www.codewars.com/kata/56a4addbfd4a55694100001f "); 
+    return points
+}
+console.log(points(["1:0", "0:1", "3:0", "4:0", "2:1", "3:1", "4:1", "3:2", "4:2", "4:3"]));
+console.log("");
 
-    function validateHello(greetings) {
-        let lower=greetings.toLowerCase(greetings)
-        console.log(lower);
-        return lower.includes["hello", "ciao" , "salut" , "hallo" , "hola" , "ahoj" , "czesc"] ? true : false
-      }
-      console.log(validateHello(" czEsC! DoInG que pASA. saLuT. vISTa wie: hOW; HOMBRe DOiNg. hOMbre! hASTA? yOu VIsTA, VIstA! hOmbRE?"));
+console.log("Ejercicio 12  Remove the time  https://www.codewars.com/kata/56b0ff16d4aa33e5bb00008e ");
+function shortenToDate(longDate) {
+    let date = longDate.split(",")
+    return date[0]
+}
+console.log(shortenToDate("Friday May 2, 9am"));
+console.log("");
+
+console.log("Ejercicio 13  Did she say hallo?  https://www.codewars.com/kata/56a4addbfd4a55694100001f ");
+
+function validateHello(greetings) {
+    let lower = greetings.toLowerCase(greetings)
+    console.log(lower);
+    return lower.includes["hello", "ciao", "salut", "hallo", "hola", "ahoj", "czesc"] ? true : false
+}
+console.log(validateHello(" czEsC! DoInG que pASA. saLuT. vISTa wie: hOW; HOMBRe DOiNg. hOMbre! hASTA? yOu VIsTA, VIstA! hOmbRE?"));
+console.log("");
+
+console.log("Ejercicio 14  Quadrants   https://www.codewars.com/kata/643af0fa9fa6c406b47c5399");
+function quadrant(x, y) {
+    return x>0 && y>0 ? console.log("El punto está en el cuadrante: 1") : x<0 && y>0 ? console.log("El punto está en el cuadrante: 2") : x<0 && y<0 ? console.log("El punto está en el cuadrante: 3") : x>0 && y<0 ? console.log("El punto está en el cuadrante: 4") : false
+}
+
+quadrant( 1, 1)
+console.log("");
+
+console.log("Ejercicio 15  Kata Example Twist   https://www.codewars.com/kata/525c1a07bb6dda6944000031");
+let websites = [];
+for (i=1; i<5; i++) {
+    websites[i]= "codewars";
+}
+console.log(websites);
+console.log("");
 
 
-    
-    
-    
+console.log("Ejercicio 16  Grasshopper - Messi goals function   https://www.codewars.com/kata/55f73be6e12baaa5900000d4");
+function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+    return laLigaGoals+copaDelReyGoals+championsLeagueGoals
+  }
+console.log(goals(1,1,1));
+console.log("");
+
+
+
+
+
+
 console.log("");
 console.log("");
 console.log("");
