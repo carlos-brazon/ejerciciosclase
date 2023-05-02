@@ -917,44 +917,44 @@ console.log("");
 
 console.log("Ejercicio 14  PUENTE  Quadrants   https://www.codewars.com/kata/643af0fa9fa6c406b47c5399");
 function quadrant(x, y) {
-    return x>0 && y>0 ? console.log("El punto está en el cuadrante: 1") : x<0 && y>0 ? console.log("El punto está en el cuadrante: 2") : x<0 && y<0 ? console.log("El punto está en el cuadrante: 3") : x>0 && y<0 ? console.log("El punto está en el cuadrante: 4") : false
+    return x > 0 && y > 0 ? console.log("El punto está en el cuadrante: 1") : x < 0 && y > 0 ? console.log("El punto está en el cuadrante: 2") : x < 0 && y < 0 ? console.log("El punto está en el cuadrante: 3") : x > 0 && y < 0 ? console.log("El punto está en el cuadrante: 4") : false
 }
 
-quadrant( 1, 1)
+quadrant(1, 1)
 console.log("");
 
 console.log("Ejercicio 15  PUENTE  Kata Example Twist   https://www.codewars.com/kata/525c1a07bb6dda6944000031");
 let websites = [];
-for (i=1; i<5; i++) {
-    websites[i]= "codewars";
+for (i = 1; i < 5; i++) {
+    websites[i] = "codewars";
 }
 console.log(websites);
 console.log("");
 
 
 console.log("Ejercicio 16  PUENTE  Grasshopper - Messi goals function   https://www.codewars.com/kata/55f73be6e12baaa5900000d4");
-function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
-    return laLigaGoals+copaDelReyGoals+championsLeagueGoals
+function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+    return laLigaGoals + copaDelReyGoals + championsLeagueGoals
 }
-console.log(goals(1,1,1));
+console.log(goals(1, 1, 1));
 console.log("");
 
 
 console.log("Ejercicio 17  PUENTE    Remove First and Last Character https://www.codewars.com/kata/56bc28ad5bdaeb48760009b0 ");
-function removeChar(str){
-    if (str.length>=2) {
-        return str.slice(1, str.length-1)
-    }else {
+function removeChar(str) {
+    if (str.length >= 2) {
+        return str.slice(1, str.length - 1)
+    } else {
         console.log('ana');
     }
-    
+
 }
 console.log(removeChar("carlos manuel brazon diaz"));
 console.log("");
 
 console.log("Ejercicio 18  PUENTE   Miles per gallon to kilometers per liter https://www.codewars.com/kata/557b5e0bddf29d861400005d ");
-function converter (mpg) {
-    let price= ((mpg * 1.609344) / 4.54609188).toFixed(2)
+function converter(mpg) {
+    let price = ((mpg * 1.609344) / 4.54609188).toFixed(2)
     return price
 }
 console.log(converter(10));
@@ -971,14 +971,14 @@ console.log("");
 
 console.log("Ejercicio 20  PUENTE   BASIC: Making Six Toast https://www.codewars.com/kata/5834fec22fb0ba7d080000e8/");
 function sixToast(num) {
-    return num<6 && num>=0 ? `Debes meter ${6-num} tostadas` : num>6 ? ` Tostadora llena debes sacar ${num-6} tostadas` : `Tostadora completa`
+    return num < 6 && num >= 0 ? `Debes meter ${6 - num} tostadas` : num > 6 ? ` Tostadora llena debes sacar ${num - 6} tostadas` : `Tostadora completa`
 }
 console.log(sixToast(8));
 console.log("");
 
 console.log("Ejercicio 21  PUENTE   You Can't Code Under Pressure#1 https://www.codewars.com/kata/53ee5429ba190077850011d4/");
 function doubleInteger(i) {
-    i=i*2
+    i = i * 2
     return i;
 }
 console.log(doubleInteger(3));
@@ -986,10 +986,10 @@ console.log("");
 
 console.log("Ejercicio 22  PUENTE   Third Angle of a Triangle https://www.codewars.com/kata/5a023c426975981341000014");
 function otherAngle(a, b) {
-    let c = 180-(a+b)
-    if (a==0 || b==0){
+    let c = 180 - (a + b)
+    if (a == 0 || b == 0) {
         return console.log(0);
-    } else if(a+b>=180) {
+    } else if (a + b >= 180) {
         return console.log(`error`);
     }
     return console.log(c);;
@@ -999,16 +999,16 @@ console.log("");
 
 console.log("Ejercicio 23  PUENTE   Function 2 - squaring an argument https://www.codewars.com/kata/523b623152af8a30c6000027/");
 function square(x) {
-    return x**2
+    return x ** 2
 }
 console.log(square(2));
 console.log("");
 
 console.log("Ejercicio 24  PUENTE   The Feast of Many Beasts https://www.codewars.com/kata/5aa736a455f906981800360d/");
 function feast(beast, dish) {
-    if ( beast.charAt(0)== dish.charAt(0) && beast.charAt(beast.length-1)== dish.charAt(dish.length-1)){
+    if (beast.charAt(0) == dish.charAt(0) && beast.charAt(beast.length - 1) == dish.charAt(dish.length - 1)) {
         return true
-    } else{
+    } else {
         return false
     }
 }
@@ -1017,33 +1017,52 @@ console.log("");
 
 console.log("Ejercicio 25  PUENTE   If you can't sleep, just count sheep!! https://www.codewars.com/kata/5b077ebdaf15be5c7f000077");
 function countSheep(num) {
-    let ini= ""
-    for (i = 1 ; i<=num ; i++){
-        ini += i+ ' sheep...'
+    let ini = ""
+    for (i = 1; i <= num; i++) {
+        ini += i + ' sheep...'
     }
     return ini
 }
 
-console.log(countSheep (3));
+console.log(countSheep(3));
 console.log("");
 
-console.log("Ejercicio 25  PUENTE   Find out whether the shape is a cube https://www.codewars.com/kata/58d248c7012397a81800005c");
-
-
-
-
-
-
-
-
-
-
-
-
+console.log("Ejercicio 26  PUENTE   Find out whether the shape is a cube https://www.codewars.com/kata/58d248c7012397a81800005c");
+var cubeChecker = function (volume, side) {
+    if (volume <= 0 || side <= 0) {
+        return false
+    } else if (volume == side ** 3) {
+        return true
+    } else {
+        return false
+    }
+}
+console.log(cubeChecker(8, 2));
 console.log("");
+
+console.log("Ejercicio 27  PUENTE   Thinkful - Logic Drills: Traffic light https://www.codewars.com/kata/58649884a1659ed6cb000072/");
+function updateLight(current) {
+    return current == "green" ? 'yellow' : current == "yellow" ? "red" : current == "red" ? "green" : true
+}
+console.log(updateLight("red"));
 console.log("");
+
+function bmi(weight, height) {
+    let imc = weight / height ** 2
+    return imc <= 18.5 ? "Underweight" : imc <= 25.0 ? "Normal" : imc <= 30.0 ? "Overweight" : "Obese"
+}
+console.log(bmi(80, 1.72));
 console.log("");
-console.log("");
-console.log("");
-console.log("");
+
+console.log("Ejercicio 29  PUENTE   Cat years, Dog years   https://www.codewars.com/kata/5a6663e9fd56cb5ab800008b");
+var humanYearsCatYearsDogYears = function(humanYears) {
+    if (humanYears==1) {
+      return [1,15,15]
+    }else if ( humanYears==2){
+      return [2, 24, 24]
+    } 
+     for (let i=1 ; i<=humanYears ; i+4)
+       return humanYears=[humanYears, i= 24+((humanYears-2)*4), i=24+((humanYears-2)*5)]
+   }
+console.log(humanYearsCatYearsDogYears(5));
 console.log("");
