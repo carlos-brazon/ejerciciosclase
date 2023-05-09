@@ -179,7 +179,7 @@ function userKnow(x) {
     console.log({ userKnowReact });
 }
 userKnow(users)
-console.log("");
+
 
 // for (let i = 0; i < array.length; i++) {
 // }
@@ -187,7 +187,7 @@ console.log("");
 
 console.log("Ejercicio 9 Imagina que obtienes de la base de datos un array de objetos con los usuarios que están registrados en tu web (tienes el array al final del ejercicio). Crea los siguientes métodos:");
 console.log(" 1    Una función llamada signUp que sirva para registrar a un usuario nuevo. Le pedirá name, email y password y creará un objeto con sus datos y un estado de logado (que por defecto será false). Si el email ya está registrado en la lista de usuarios, devolverá un mensaje informando de que el usuario ya está registrado. Si no, introducirá al usuario en la lista, e informará de que se ha completado el registro.");
-const user2 = [
+let user2 = [
     {
         username: 'Alex',
         email: 'alex@alex.com',
@@ -219,24 +219,33 @@ const user2 = [
         isLoggedIn: false
     }
 ];
-function signUp(x, y, z) {
-    let array = Object.values(user2)
-    console.log(array);
-    for (let i = 0; i < array.length; i++) {
-        let tru=array[i].email===y
-        if (tru) {
-          return "El usuario ya está registrado"
-                } else{
-                    console.log("registro completado");
-                }
-    }
-    return  user2.push( {
-            username: x,
-            email: y,
-            password: z,
-            isLoggedIn: false
-                })   
-    
-}
-console.log(signUp("carlos", "carlos@gmail.com", "252525"));
 console.log(user2);
+function signUp(x, y, z) {
+    for (let i = 0; i < user2.length; i++) {
+        if (user2[i].email === y) {
+            return "El usuario ya está registrado";
+        }
+    }
+    let registro = { username: x, email: y, password: z, isLoggedIn: false };
+    user2.push(registro)
+    return 'El registro se ha completado';
+}
+console.log(signUp("carlos", 'alex@alex.com', "252525"));
+// console.log(user2);
+console.log("");
+
+console.log(" 2    Crea la función signIn que acepte un email y una contraseña, compruebe si son correctos, y si lo son, cambie el estado de logado del usuario a true.");
+function signIn(y, z) {
+    for (let i = 0; i < array2.length; i++) {
+        if (user2[i].email === y && user2[i].password === z)
+            users[i].isLoggedIn = true
+
+    }
+
+}
+
+
+
+
+
+console.log("");

@@ -10,9 +10,5 @@
 //   console.log(findMultiples(2,6));
 
 
-
-
-
-
 console.log("");
 console.log("");
